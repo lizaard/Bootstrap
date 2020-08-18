@@ -1,0 +1,20 @@
+.navbar .nav-link {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+.navbar .nav-item.active {
+  border-left: 3px solid #444;
+}
+
+.carousel-item {
+  height: 450px;
+}
+.carousel-item img {
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=main.css.map */
