@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/f4f1e62e36.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
+<body id="home" data-spy="scroll" data-target="mainNav">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top py-4" id="mainNav">
         <div class="container">
             <a href="" id="home">
                 <img src="img/mlogo.png" width="50" height="50" alt="">
@@ -155,56 +155,13 @@
                     </p>
                 </div>
                 <!-- accordeon -->
-                <!-- <div id="accordion">
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="mb-0">
-                                <div href="#collapse1" data-toggler="collapse" data-parent="accordion">
-                                    <i class="fas fa-arrow-circle-down"></i>Get inpired
-                                </div>
-                            </h5>
-                        </div>
-                        <div id="collapse1" class="collapse show"> 
-                            <div class="card-body">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, distinctio reprehenderit ullam molestias nostrum odit temporibus blanditiis doloremque quae sunt dignissimos odio aut velit provident id dolor officia laborum. Illum sit aliquam nostrum voluptates eius ex recusandae nesciunt numquam! Fuga aliquid nemo rerum quibusdam ad rem inventore nihil distinctio obcaecati?
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="mb-0">
-                                <div href="#collapse2" data-toggler="collapse" data-parent="accordion">
-                                    <i class="fas fa-arrow-circle-down"></i>Get inpired
-                                </div>
-                            </h5>
-                        </div>
-                        <div id="collapse2" class="collapse"> 
-                            <div class="card-body">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, distinctio reprehenderit ullam molestias nostrum odit temporibus blanditiis doloremque quae sunt dignissimos odio aut velit provident id dolor officia laborum. Illum sit aliquam nostrum voluptates eius ex recusandae nesciunt numquam! Fuga aliquid nemo rerum quibusdam ad rem inventore nihil distinctio obcaecati?
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="mb-0">
-                                <div href="#collapse3" data-toggler="collapse" data-parent="accordion">
-                                    <i class="fas fa-arrow-circle-down"></i>Get inpired
-                                </div>
-                            </h5>
-                        </div>
-                        <div id="collapse3" class="collapse"> 
-                            <div class="card-body">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, distinctio reprehenderit ullam molestias nostrum odit temporibus blanditiis doloremque quae sunt dignissimos odio aut velit provident id dolor officia laborum. Illum sit aliquam nostrum voluptates eius ex recusandae nesciunt numquam! Fuga aliquid nemo rerum quibusdam ad rem inventore nihil distinctio obcaecati?
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+
                 <div class="accordion" id="accordionExample">
                     <div class="card">
                       <div class="card-header" id="headingOne">
                         <h2 class="mb-0">
-                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Collapsible Group Item #1
+                          <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="fas fa-arrow-circle-down"></i> Collapsible Group Item #1
                           </button>
                         </h2>
                       </div>
@@ -218,8 +175,8 @@
                     <div class="card">
                       <div class="card-header" id="headingTwo">
                         <h2 class="mb-0">
-                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Collapsible Group Item #2
+                          <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="fas fa-arrow-circle-down"></i> Collapsible Group Item #2
                           </button>
                         </h2>
                       </div>
@@ -232,8 +189,8 @@
                     <div class="card">
                       <div class="card-header" id="headingThree">
                         <h2 class="mb-0">
-                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Collapsible Group Item #3
+                          <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="fas fa-arrow-circle-down"></i> Collapsible Group Item #3
                           </button>
                         </h2>
                       </div>
@@ -248,13 +205,218 @@
         </div>
     </div>
 </section>
-    <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+
+
+
+<section id="authors" class="my-5 text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="info-header mb-5">
+                    <h1 class="text-primary pb-3">
+                        Meet
+                    </h1>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam totam unde aliquid ipsam, doloribus laboriosam.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/person1.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+                        <h3>NAME</h3>
+                        <h5 class="text-muted">
+                            TEXT
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio quam maxime voluptatem, aut sed.</p>
+                        <div class="d-flex justify-content-center">
+                          <div class="p-4">
+                              <a href="facebook.com"></a>
+                              <i class="fab fa-facebook"></i>
+                          </div>
+                          <div class="p-4">
+                            <a href="facebook.com"></a>
+                            <i class="fab fa-facebook"></i>
+                          </div>
+                          <div class="p-4">
+                            <a href="facebook.com"></a>
+                            <i class="fab fa-facebook"></i>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/person1.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+                        <h3>NAME</h3>
+                        <h5 class="text-muted">
+                            TEXT
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio quam maxime voluptatem, aut sed.</p>
+                        <div class="d-flex justify-content-center">
+                          <div class="p-4">
+                              <a href="facebook.com"></a>
+                              <i class="fab fa-facebook"></i>
+                          </div>
+                          <div class="p-4">
+                            <a href="facebook.com"></a>
+                            <i class="fab fa-facebook"></i>
+                          </div>
+                          <div class="p-4">
+                            <a href="facebook.com"></a>
+                            <i class="fab fa-facebook"></i>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/person1.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+                        <h3>NAME</h3>
+                        <h5 class="text-muted">
+                            TEXT
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio quam maxime voluptatem, aut sed.</p>
+                        <div class="d-flex justify-content-center">
+                          <div class="p-4">
+                              <a href="facebook.com"></a>
+                              <i class="fab fa-facebook"></i>
+                          </div>
+                          <div class="p-4">
+                            <a href="facebook.com"></a>
+                            <i class="fab fa-facebook"></i>
+                          </div>
+                          <div class="p-4">
+                            <a href="facebook.com"></a>
+                            <i class="fab fa-facebook"></i>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/person1.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+                        <h3>NAME</h3>
+                        <h5 class="text-muted">
+                            TEXT
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio quam maxime voluptatem, aut sed.</p>
+                        <div class="d-flex justify-content-center">
+                          <div class="p-4">
+                              <a href="facebook.com"></a>
+                              <i class="fab fa-facebook"></i>
+                          </div>
+                          <div class="p-4">
+                            <a href="facebook.com"></a>
+                            <i class="fab fa-facebook"></i>
+                          </div>
+                          <div class="p-4">
+                            <a href="facebook.com"></a>
+                            <i class="fab fa-facebook"></i>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <h3>TEXT</h3>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut atque totam voluptate, cum architecto cumque?</p>
+                <form action="">
+                    <div class="input-group input-gruop-lg mb-3">
+                        <div class="input-grup-prepend">
+                            <span class="input-grup-text">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="input-group input-gruop-lg mb-3">
+                        <div class="input-grup-prepend">
+                            <span class="input-grup-text">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="input-group input-gruop-lg mb-3">
+                        <div class="input-grup-prepend">
+                            <span class="input-grup-text">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                        <textarea name="" id="" rows="5" class="form-control" placeholder="Message"></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-primary btn-block btn-lg">
+                </form>
+            </div>
+            <div class="col-lg-3 aling-sefl-center">
+                <img src="img/mlogo.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<footer id="main-footer" class="py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-6 ml-auto">
+                <p class="lead">
+                    Copyright &copy; <span id="year"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script>
         // Get current year for Copyrights
     $('#year').text(new Date().getFullYear());
+
+
+    // Init Scrollspy
+
+    $('body').scrollspy({target:'#mainNav'});
+
+    // Smooth Scroll
+
+    $('#mainNav a').on('click', function(event){
+        if(this.hash !== "") {
+            event.preventDefault();
+
+            const hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+                window.location.hash = hash;
+            });
+        }
+    });
 </script>
 </body>
 </html> 
