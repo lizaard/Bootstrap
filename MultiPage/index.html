@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/f4f1e62e36.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" />
+  </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -159,6 +160,60 @@
   </div>
 </section>
 
+
+<!-- Photo Gallery -->
+<section id="hallery" class="py-5">
+  <div class="container">
+    <h1 class="text-center"></h1>
+    <p class="text-center"></p>
+    <div class="row mb-4">
+      <div class="col-md-4">
+     <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
+                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+            </a>
+      </div>
+      <div class="col-md-4">
+      <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
+                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+            </a>
+      </div>
+      <div class="col-md-4">
+     <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
+                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+            </a>
+      </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col-md-4">
+       <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
+                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+            </a>
+      </div>
+      <div class="col-md-4">
+     <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
+                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+            </a>
+      </div>
+      <div class="col-md-4">
+        <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
+          <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+      </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- video modal -->
 <div class="modal fade" id="videoModal">
   <div class="modal-dialog">
@@ -180,6 +235,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
 <script>
         // Get current year for Copyrights
     $('#year').text(new Date().getFullYear());
@@ -191,6 +247,11 @@
       pause: 'hover',
     });
 
+
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
 
     // // video Play
     $(function () {
@@ -204,6 +265,8 @@
         });
       });
     });
+
+    
 </script>
 </body>
 </html>
