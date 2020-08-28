@@ -80,4 +80,16 @@ body {
   margin-top: -50px;
 }
 
+#faq .card {
+  border: #444;
+}
+#faq .card .card-body,
+#faq .card .card-header {
+  background-color: #333333;
+}
+#faq [type=button] {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=main.css.map */
