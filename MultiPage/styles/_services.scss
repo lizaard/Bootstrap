@@ -1,0 +1,14 @@
+#faq{
+    .card{
+        border: #444;
+        .card-body,
+        .card-header{
+        background-color: #333333;
+        }
+    }
+    [type='button']{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+}
